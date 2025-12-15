@@ -95,11 +95,35 @@ section h3 {
 .participants li {
   margin-bottom: 6px;
   font-size: 14px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participant-name {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
 }
 
 .participants li:before {
-  content: "👤 ";
-  margin-right: 5px;
+  display: none;
 }
 
 .form-group {
